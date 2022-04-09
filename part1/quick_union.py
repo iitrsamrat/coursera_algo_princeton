@@ -18,6 +18,8 @@ class QuickUnion:
         # O(N) search too tall tree
         ppid = self.__root(p)
         pqid = self.__root(q)
+        if ppid == pqid:
+            return self
         # O(1) union
         self.id[ppid] = pqid
         return self
