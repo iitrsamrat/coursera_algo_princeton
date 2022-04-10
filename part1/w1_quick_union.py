@@ -24,6 +24,7 @@ class QuickUnion:
         self.id[ppid] = pqid
         return self
 
+
 if __name__ == '__main__':
     qu = QuickUnion(10)
     qu.union(4, 3).union(3, 8).union(6,5).union(9,4).union(2,1).union(9, 8)
